@@ -7,5 +7,7 @@
   <li>CORE Java</li>
   <li>Spring Framework</li>
   <ul><li>Spring Boot</li></ul>
+  <li>Maven </li>
+  <ul><li>Multi Module Maven Setup</ul></li>
 </ul>  
 
