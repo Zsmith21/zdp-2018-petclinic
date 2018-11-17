@@ -3,7 +3,7 @@ package edu.springframework.zdppetclinic.model;
 /**
  * The 'POJO' 'Plain/ordinary Java Object' for JPA (Saving)
  */
-public class Person {
+public class Person extends BaseEntity{
 
     private String firstName;
 

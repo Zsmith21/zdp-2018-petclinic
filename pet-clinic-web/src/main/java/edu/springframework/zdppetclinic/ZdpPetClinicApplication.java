@@ -9,6 +9,5 @@ public class ZdpPetClinicApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(ZdpPetClinicApplication.class, args);
-        System.out.println("Hello!");
     }
 }
