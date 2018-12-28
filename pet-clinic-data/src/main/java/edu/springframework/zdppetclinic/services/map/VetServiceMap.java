@@ -4,10 +4,11 @@ import edu.springframework.zdppetclinic.model.Owner;
 import edu.springframework.zdppetclinic.model.Pet;
 import edu.springframework.zdppetclinic.model.Vet;
 import edu.springframework.zdppetclinic.services.CrudService;
+import edu.springframework.zdppetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
