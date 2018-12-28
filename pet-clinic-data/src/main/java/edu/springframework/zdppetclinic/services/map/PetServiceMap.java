@@ -3,9 +3,11 @@ package edu.springframework.zdppetclinic.services.map;
 import edu.springframework.zdppetclinic.model.Owner;
 import edu.springframework.zdppetclinic.model.Pet;
 import edu.springframework.zdppetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
     @Override

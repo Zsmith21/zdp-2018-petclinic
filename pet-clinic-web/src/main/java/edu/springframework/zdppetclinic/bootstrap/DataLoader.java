@@ -4,8 +4,7 @@ import edu.springframework.zdppetclinic.model.Owner;
 import edu.springframework.zdppetclinic.model.Vet;
 import edu.springframework.zdppetclinic.services.OwnerService;
 import edu.springframework.zdppetclinic.services.VetService;
-import edu.springframework.zdppetclinic.services.map.OwnerServiceMap;
-import edu.springframework.zdppetclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,9 +17,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     /**
@@ -44,6 +44,8 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
+        System.out.println("Loaded Owners....");
+
         Vet owner3 = new Vet();
         owner3.setFirstName("Zach");
         owner3.setLastName("Smith");
@@ -56,5 +58,6 @@ public class DataLoader implements CommandLineRunner {
 
         vetService.save(owner4);
 
+        System.out.println("Loaded Vets....");
     }
 }

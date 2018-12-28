@@ -1,13 +1,12 @@
 package edu.springframework.zdppetclinic.services.map;
 
-import edu.springframework.zdppetclinic.model.Owner;
-import edu.springframework.zdppetclinic.model.Pet;
 import edu.springframework.zdppetclinic.model.Vet;
-import edu.springframework.zdppetclinic.services.CrudService;
 import edu.springframework.zdppetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

@@ -3,9 +3,11 @@ package edu.springframework.zdppetclinic.services.map;
 import edu.springframework.zdppetclinic.model.Owner;
 import edu.springframework.zdppetclinic.services.CrudService;
 import edu.springframework.zdppetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
