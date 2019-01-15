@@ -3,9 +3,8 @@
   
     
   <h1>Basic setup v1.0</h1>
-  
-  [img]https://i.gyazo.com/16c24a4c88424a9c9341dbc87d38d061.png[/img]
-  
+
+  ![My image](https://i.gyazo.com/16c24a4c88424a9c9341dbc87d38d061.png)
   Technologies Leveraged: 
   
 <ul>
@@ -15,7 +14,7 @@
   <li>Spring REST</li>
   <li>Devtools</li>
   <li>Thymeleaf</li>
-  <ul><li>Spring Boot</li></ul>
+  <li>Spring Boot</li>
   <li>Maven </li>
   <ul><li>Multi Module Maven Setup</ul></li>
 </ul>  
