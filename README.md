@@ -1,5 +1,5 @@
 # zdp-2018-petclinic (Zachary-David Smith)
-<h2>ZDP-In House Swing Framework PetClinic
+<h2>ZDP-In House Spring Framework PetClinic
   
     
   <h1>Basic setup v1.0</h1>
