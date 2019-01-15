@@ -11,7 +11,6 @@
   <li>Java/Java 8</li>
   <li>Spring JPA</li>
   <li>Spring MVC</li>
-  <li>Spring REST</li>
   <li>Devtools</li>
   <li>Thymeleaf</li>
   <li>Spring Boot</li>
