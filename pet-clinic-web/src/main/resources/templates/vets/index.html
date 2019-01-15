@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 </head>
 <body>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Clinic Menu</h3>
+        <a href="/index" class="w3-bar-item w3-button">Home</a>
+        <a href="/vets" class="w3-bar-item w3-button">Vets Directory</a>
+        <a href="/pets" class="w3-bar-item w3-button">Pets Directory</a>
+        <a href="/owners/" class="w3-bar-item w3-button">Owner Directory</a>
+    </div>
 
-<h1 align="center" th:text="'List of Vets'">List of Vets...</h1>
+
+    <div class="w3-col w3-theme-l4 w3-container" style="margin-left: 25%;">
+        <h1 style="margin-left: 27%;" th:text="'List of Vets'">List of Vets...</h1>
+
+        <table style="margin-left: 25%;" id="table">
+            <col width="20">
+            <col width="100">
+            <col width="100">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="w3-hover-gray" th:each="vet: ${vets}">
+                <td th:text="${vet.getId()}">1</td>
+                <td th:text="${vet.getFirstName()}">Johnny</td>
+                <td th:text="${vet.getLastName()}">Tugless</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
 
 </body>
 </html>
